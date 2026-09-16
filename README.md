@@ -36,6 +36,9 @@
 - [ ] Monotonic Stack
 - [ ] BFS / DFS
 
+## Selections
+- [x] [Quick Select](algorithms/selection/quickselect/)
+
 ## Development
 
 Проект использует [uv](https://docs.astral.sh/uv/) для управления

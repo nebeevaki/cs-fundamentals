@@ -1,5 +1,7 @@
 import pytest
-from quick_sort import quick_sort
+
+from algorithms.sorting.quick_sort.quick_sort import quick_sort
+
 
 @pytest.mark.parametrize(
     "nums",

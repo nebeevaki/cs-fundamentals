@@ -1,3 +1,6 @@
+from random import randint
+
+
 def quick_sort(nums: list[int]) -> None:
     if not nums:
         return
@@ -28,7 +31,7 @@ def _partition(nums: list[int], left: int = 0, right: int | None = None) -> tupl
     if right is None:
         right = len(nums) - 1
 
-    pivot = nums[(left + right) // 2] # выбираем опорный элемент
+    pivot = nums[randint(left, right)] # выбираем опорный элемент
     equal = greater = current = left # три указателя
 
     while current <= right: # до момента, пока не дойдем до правой границы
