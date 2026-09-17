@@ -1,7 +1,7 @@
 import random
 import pytest
 
-from algorithms.sorting.quick_sort.quick_sort import quick_sort
+from algorithms.sorting.merge_sort.merge_sort import merge_sort
 
 
 @pytest.mark.parametrize(
@@ -14,17 +14,15 @@ from algorithms.sorting.quick_sort.quick_sort import quick_sort
         [-3, 5, -1, 0, -10],
         [42],
         [],
-    ],
+    ]
 )
-def test_quick_sort(nums: list[int]) -> None:
+def test_merge_sort(nums: list[int]) -> None:
     expected = sorted(nums)
-
-    quick_sort(nums)
-
-    assert nums == expected
+    sorted_nums = merge_sort(nums)
+    assert sorted_nums == expected
 
 
-def test_quick_sort_random():
+def test_merge_sort_random():
     for _ in range(100):
         nums = [
             random.randint(-1000, 1000)
@@ -32,6 +30,6 @@ def test_quick_sort_random():
         ]
 
         expected = sorted(nums)
-        quick_sort(nums)
+        sorted_nums = merge_sort(nums)
 
-        assert nums == expected
+        assert sorted_nums == expected

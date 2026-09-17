@@ -15,7 +15,7 @@
 ### Sorting
 
 - [x] [Quick Sort](algorithms/sorting/quick_sort/)
-- [ ] Merge Sort
+- [x] [Merge Sort](algorithms/sorting/merge_sort)
 - [ ] Heap Sort
 
 ## Data Structures
