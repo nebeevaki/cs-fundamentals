@@ -23,7 +23,7 @@
 - [ ] Stack
 - [ ] Queue
 - [ ] Hash Table
-- [ ] Heap
+- [x] [Heap](algorithms/data_structures/heap)
 - [ ] Linked List
 - [ ] Binary Search Tree
 - [ ] Graph
